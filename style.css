@@ -1,0 +1,18 @@
+body
+{
+  color: rgb(255, 0, 34);
+  background: #00eaff;
+}
+
+h3
+{
+ height: 50px;
+ width: 150px;
+}
+
+#camera, #result
+{
+  border: 2px dashed rgb(0, 0, 0);
+  width: 350px;
+  height: 300px; 
+}

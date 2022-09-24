@@ -1,0 +1,78 @@
+<html>
+ <head>
+  <title>Hand Gesture App</title> 
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+ </head>
+
+ <body>
+  <div class="container">
+  
+   <center>
+    <h3 class="btn btn-primary">
+     Hand Gesture App
+
+    <br>
+
+    &#128076;
+    &#128077;
+    &#9996;
+    </h3>
+
+   <br>
+   <br>
+
+   <p style="font-size: 22px;">Take your selfie to generate emoji
+    <br>
+    <b style="color: rgb(0, 64, 254)">Take a selfie of a hand gesture to know its meaning?</b>
+
+    <br>
+
+    <b style="color: rgb(177, 255, 9)">One of the following gestures in the model are trained-</b>
+
+    <br>
+
+    <b style="color: rgb(255, 0, 225)">Are you Angry?</b>
+
+   <div class="col-md-4 col-sm-12 col-xs-12">
+    <label>Webcam view - </label>
+    <div id="camera"></div>
+    <br>
+    <button onclick="snapshot()" class="btn btn-success">Capture Image</button>
+
+    <br>
+    
+    <br>
+
+    </div>
+
+    <div class="col-md-4 col-sm-12 col-xs-12">
+     <label>Prediction - </label>
+     <p class="emotion_name" id="result_gesture_name"></p>
+     <p class="emoji" id="update_emoji"></p>
+    </div> 
+
+    <div class="col-md-4 col-sm-12 col-xs-12">
+     <label>Snapshot - </label>
+     <div id="result"></div>
+
+     <br>
+
+     <button onclick="check()" class="btn btn-success">Predict Image</button>
+
+     <br>
+
+     <br>
+    </div>
+   </center>
+    <br>
+   </p>
+  </div>
+ </body>
+</html>
